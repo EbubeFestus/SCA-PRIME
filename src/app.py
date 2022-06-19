@@ -4,6 +4,16 @@ import os
 
 def prime(s):
     # your code goes here
+    s = int(input("Please input a number"))
+    if s > 1:
+        for i in range(2,s):
+            if(s % i) == 0:
+                print('%d is not prime'%(s))
+                break
+        else:
+            print('%d is prime'%(s))  
+    else:
+        print('%d is not prime'%(s))
 
 def solution(s):
     return prime(s)
